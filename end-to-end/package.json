@@ -1,0 +1,22 @@
+{
+  "name": "end-to-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-android": "wdio ./wdio.android.conf.js",
+    "test-ios-appium1416": "wdio ./wdio.ios.appium1416.conf.js",
+    "test-ios-appium16": "wdio ./wdio.ios.appium16.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {    
+    "chai": "^3.5.0",
+    "minimist": "^1.2.0",
+    "node-uuid": "^1.4.7",
+    "path": "^0.12.7",
+    "wdio-mocha-framework": "^0.5.8",
+    "wdio-spec-reporter": "0.0.5",
+    "webdriverio": "^4.6.1"
+  }
+}
