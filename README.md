@@ -2,6 +2,7 @@
 
 
 ## How to run locally:
+### Android
 1. make sure you have runinng appium server on port 4723
 1. cd end-to-end
 2. npm i
