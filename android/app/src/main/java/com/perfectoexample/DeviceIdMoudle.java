@@ -40,7 +40,7 @@ public class DeviceIdMoudle extends ReactContextBaseJavaModule {
             br.close();
         }
         catch (IOException e) {
-            promise.resolve("failed to retrieve");
+            promise.resolve("failed to retrieve - " + e.getMessage());
         }
         promise.resolve(text.toString());
     }

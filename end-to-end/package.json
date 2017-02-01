@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test-android": "wdio ./wdio.android.conf.js",
+    "test-android-perfecto": "wdio ./wdio.android.perfecto.conf.js",
     "test-ios-appium1416": "wdio ./wdio.ios.appium1416.conf.js",
     "test-ios-appium16": "wdio ./wdio.ios.appium16.conf.js"
   },
