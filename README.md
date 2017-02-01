@@ -1,12 +1,18 @@
-# webdriverio-appium-example
+# Webdriver.io - React Native Example
 
+## Installation
+go to end-to-end folder and execute `npm i`
 
-## How to run locally:
+## Run locally:
 ### Android
-1. make sure you have runinng appium server on port 4723
-1. cd end-to-end
-2. npm i
-3. npm run test-android -- --app FULL_PATH_TO_APK
+from end-to-end folder, execute:
+`npm run test-android -- --app FULL_PATH_TO_APK`
 
 Where FULL_PATH_TO_APK is the full file system path the the apk named 'app.apk' in end-to-end folder.
 You can rebuild the app and reference to an other apk file if you need.
+
+## Run on Perfecto:
+### Android
+make sure tyou uploaded app.apk to your private Perfecto storage.
+from end-to-end folder, execute:
+`npm run test-android-perfecto -- --app PRIVATE:app.apk --appPackage com.perfectoexample --user PERFECTO_USER --password PERFECTO_PASSWORD --deviceName PERFECTO_DEVICE_NANE`
