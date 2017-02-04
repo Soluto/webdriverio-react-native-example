@@ -35,13 +35,16 @@ module.exports.config = {
 
     before: function (capabilities, specs) {
         global.expect = chai.expect;
-
+        
+        browser.addCommand("createTestDevice", require('./extensions/createTestDevice'), true);
+        
         console.log("running test on Android")
         console.log("generating device id");
         console.log("pusing device id to file");        
-        const testDeviceId = uuid.v4();             
-        var data = new Buffer(testDeviceId).toString('base64');
-        browser.pushFile(`/sdcard/perfecto-example/deviceId.txt`, data);    
+        const testDeviceId = uuid.v4();
+        const testId = Math.floor(Math.random() * 1000000)
+        
+        browser.createTestDevice(testId, testDeviceId);
         console.log("using generated device id - " + testDeviceId);
 
         browser.testDeviceId = testDeviceId;

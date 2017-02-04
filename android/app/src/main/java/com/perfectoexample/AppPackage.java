@@ -13,7 +13,7 @@ import java.util.List;
 public class AppPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-        return Arrays.<NativeModule>asList(new DeviceIdMoudle(reactContext));
+        return Arrays.<NativeModule>asList(new DeviceIdModule(reactContext));
     }
 
     @Override

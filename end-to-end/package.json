@@ -11,13 +11,13 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {    
+  "dependencies": {
     "chai": "^3.5.0",
     "minimist": "^1.2.0",
     "node-uuid": "^1.4.7",
     "path": "^0.12.7",
     "wdio-mocha-framework": "^0.5.8",
     "wdio-spec-reporter": "0.0.5",
-    "webdriverio": "^4.6.1"
+    "webdriverio": "^4.6.2"
   }
 }
