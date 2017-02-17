@@ -40,7 +40,7 @@ module.exports.config = {
     before: function (capabilities, specs) {
         global.expect = chai.expect;
         
-        browser.addCommand("createTestDevice", require('./extensions/perfecto/createTestDevice'), true);
+        browser.addCommand("createTestDevice", require('./extensions/createTestDevice'), true);
         
         console.log("running test on Android")
         console.log("generating device id");
