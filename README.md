@@ -1,4 +1,4 @@
-# Webdriver.io - React Native Example
+# webdriver.io - React Native Example
 
 ## Installation
 Go to `end-to-end` folder and execute `npm i`
