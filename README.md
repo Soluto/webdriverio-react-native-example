@@ -7,7 +7,7 @@ Go to `end-to-end` folder and execute `npm i`
 ### Android
 Go to `end-to-end` folder and execute:
 
-`npm run test-android -- --app FULL_PATH_TO_APK`
+`npm run test-android-local -- --app FULL_PATH_TO_APK`
 
 Where FULL_PATH_TO_APK is the full file system path the the apk named 'app.apk' in end-to-end folder.
 You can rebuild the app and reference to an other apk file if you need.
