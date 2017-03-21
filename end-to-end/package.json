@@ -6,7 +6,8 @@
   "scripts": {
     "test-android-local": "wdio ./wdio.android.local.conf.js",
     "test-ios-local": "wdio ./wdio.ios.local.conf.js",    
-    "test-android-perfecto": "wdio ./wdio.android.perfecto.conf.js"
+    "test-android-perfecto": "wdio ./wdio.android.perfecto.conf.js",
+    "test-ios-perfecto": "wdio ./wdio.ios.perfecto.conf.js"
   },
   "author": "",
   "license": "ISC",
