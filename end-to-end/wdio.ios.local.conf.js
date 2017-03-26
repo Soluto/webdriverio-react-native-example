@@ -15,7 +15,7 @@ module.exports.config = {
         platformName: 'iOS',
         platformVersion: '10.2',
         udid: argv.udid,
-        bundleId: 'org.reactjs.native.example.PerfectoExampleSoluto',
+        bundleId: argv.bundleId || 'org.reactjs.native.example.PerfectoExampleSoluto',
         newCommandTimeout:300,
         autoLaunch: false,
         processArguments: '{ "args": ["'+uuid.v4()+'"] }', 
