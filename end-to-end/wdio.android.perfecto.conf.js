@@ -8,12 +8,12 @@ module.exports.config = {
         './test.js'
     ],
 
-    host: 'beta.perfectomobile.com',
-    path: '/nexperience/perfectomobile/wd/hub',
-    port: 80,
+    host: argv.host || 'branchtest.perfectomobile.com',
+    path: argv.path || '/nexperience/perfectomobile/wd/hub',
+    port: argv.port || 80,
 
     capabilities: [{
-        app: argv.app,        
+        app: argv.app,
         appPackage: argv.appPackage,
         platformName: 'Android',
         browserName: 'mobileOS',

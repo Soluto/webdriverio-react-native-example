@@ -5,9 +5,19 @@ module.exports = function async(testId, testDeviceId) {
         .map(s => new Buffer(s).toString('base64'))
         .map((file, i) => {
             const path = `/sdcard/soluto-automation/${i}.txt`;
-            console.log("pusing file to: " + path)
-            return this.pushFile(path, file);
+            return () => {
+                console.log("pusing file to: " + path)
+                return this.pushFile(path, file);                
+            }
         });
+    
+    return runSerial(uploads)
+}
 
-    return Promise.all(uploads);
+function runSerial(tasks) {
+  var result = Promise.resolve();
+  tasks.forEach(task => {
+    result = result.then(() => task());
+  });
+  return result;
 }
