@@ -7,7 +7,7 @@ module.exports = function async(testId, testDeviceId) {
             const path = `/sdcard/soluto-automation/${i}.txt`;
             return () => {
                 console.log("pusing file to: " + path)
-                return this.pushFile(path, file);                
+                return this.pushFile(path, file).then(() => delay(5000));                
             }
         });
     
@@ -21,3 +21,13 @@ function runSerial(tasks) {
   });
   return result;
 }
+
+function delay(duration) {
+	return function(){
+		return new Promise(function(resolve, reject){
+			setTimeout(function(){
+				resolve();
+			}, duration)
+		});
+	};
+};
