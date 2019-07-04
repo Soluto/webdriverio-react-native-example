@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test-android-local": "wdio ./wdio.android.local.conf.js",
-    "test-ios-local": "wdio ./wdio.ios.local.conf.js",    
+    "test-ios-local": "wdio ./wdio.ios.local.conf.js",
     "test-android-perfecto": "wdio ./wdio.android.perfecto.conf.js",
-    "test-ios-perfecto": "wdio ./wdio.ios.perfecto.conf.js"
+    "test-ios-perfecto": "wdio ./wdio.ios.perfecto.conf.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +20,8 @@
     "path": "^0.12.7",
     "wdio-mocha-framework": "^0.5.8",
     "wdio-spec-reporter": "0.0.5",
-    "webdriverio": "^4.6.2"
-  }
+    "webdriverio": "^4.6.2",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
