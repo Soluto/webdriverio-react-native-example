@@ -18,6 +18,6 @@
     "path": "^0.12.7",
     "wdio-mocha-framework": "^0.5.8",
     "wdio-spec-reporter": "0.0.5",
-    "webdriverio": "^4.6.2"
+    "webdriverio": "^5.0.0"
   }
 }
